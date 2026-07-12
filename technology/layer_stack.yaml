@@ -1,0 +1,29 @@
+layers:
+
+    TiN:
+        layer: 1
+        datatype: 0
+        thickness: 20e-9
+        color: blue
+
+    Nb:
+        layer: 2
+        datatype: 0
+        thickness: 200e-9
+        color: green
+
+    aSi:
+        epsilon_r: 11.45
+        loss_tangent: 0.0002
+        color: red
+
+    GroundPlane:
+        layer: 3
+        datatype: 0
+
+        color: gray
+
+    Ports:
+        layer: 10
+        datatype: 0
+

@@ -1,0 +1,13 @@
+design:
+
+  name: cpw_test
+
+cpw:
+
+  length: 2000
+  width: 10
+  gap: 6
+
+simulation:
+  start_frequency: 1e9
+  stop_frequency: 18e9

@@ -1,0 +1,10 @@
+design:
+  name: validation
+
+trace:
+  length: 100 # um
+  width: 2.7 # um
+
+layer:
+  number: 1
+  datatype: 0
