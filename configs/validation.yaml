@@ -1,0 +1,22 @@
+design:
+  name: validation
+
+geometry:
+  type: "inverted_microstrip"
+  name: microstrip
+  width: 2.7
+  length: 100
+
+process:
+  substrate: Sapphire
+  conductor: TiN
+  dielectric: aSi
+  ground: Nb
+
+  conductor_layer: [1, 0]
+
+output:
+  directory: "gds"
+  gds_filename: "microstrip.gds"
+
+
