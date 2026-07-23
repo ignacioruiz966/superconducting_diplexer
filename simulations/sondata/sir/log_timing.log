@@ -1,0 +1,192 @@
+Run 1:  Mon Jul 20 15:51:37 2026.  ucsb2.2.75484.
+        Em version 18.56 (64-bit LNX-86) on wheatley local.
+
+  Project:  /home/ignacio/projects/superconducting_diplexer/simulations/sir.son.
+
+    Begin electromagnetic simulation using frequency sweep:
+      ABS Start = 1, Stop = 16 GHZ
+
+    Frequency:  1 GHZ
+      Subsectioning at 16 GHz with Eeff of 10.9.
+      Subsectioning time:  0 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 420 microns length, 633 subsections, 6 MB.
+        Left SOC Magnetic Wall: 840 microns length, 619 subsections, 6 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 420 microns length, 633 subsections, 6 MB.
+        Right SOC Magnetic Wall: 840 microns length, 619 subsections, 6 MB.
+      Em license feature:  emhighperformance.
+
+      Circuit requires 2614 subsections and 71 MB of memory.
+
+      Primary structure subsections by level and type:
+      Level 0:
+        Surface Staircase:  913
+      Level 1:
+        Surface Staircase:  1,701
+
+      Process memory by type:
+        System matrix:            52 MB
+        Elemental subsections:
+          Primary structure:      6 MB
+          Left standard:          5 MB
+          Right standard:         5 MB
+        Fourier transform:        1 MB
+        Waveguide mode:           1 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    71 MB
+
+      Amount of RAM installed on host computer:  504 GB
+      Matrix solver:  internal 64-bit SSE with loss.
+      Simulation mode:  local machine.
+      Threads:  using 64 thread(s), 128 core(s) available.
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 1 second.
+        SOC Magnetic Wall Std: 0 seconds.
+        Total:                 1 second.
+      Frequency completed Mon Jul 20 15:51:39 2026.
+      Total time per frequency:  2 seconds.
+
+    Frequency:  16 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  1 second.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:41 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 3.7 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  3.7 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:43 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 1.55 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  1.55 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:45 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 2.35 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  2.35 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:47 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 2 at 14.75 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  14.75 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:49 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 3.35 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  3.35 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:51 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 6.55 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  6.55 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  1 second.
+      Frequency completed Mon Jul 20 15:51:53 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 2 at 10.2 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  10.2 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  0 seconds.
+      Matrix solve time:  1 second.
+      Frequency completed Mon Jul 20 15:51:55 2026.
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 2 at 5.25 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  5.25 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:51:58 2026.
+      Total time per frequency:  3 seconds.
+      ABS: Energy conservation for port 1 at 11.75 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  11.75 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Mon Jul 20 15:52:01 2026.
+      Total time per frequency:  3 seconds.
+      ABS: Energy conservation for port 1 at 8.4 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  8.4 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  0 seconds.
+      Matrix solve time:  1 second.
+      Frequency completed Mon Jul 20 15:52:04 2026.
+      Total time per frequency:  3 seconds.
+      ABS: SNR = 45.9822 dB (40 dB Goal) for S2_2 at 5.05 GHz.
+      ABS: Time = 1 second.
+
+    Post-Analysis information for em run 1:
+      Total time for 12 frequencies:  28 seconds.
+
+Em simulation completed Mon Jul 20 15:52:05 2026.

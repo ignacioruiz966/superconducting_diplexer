@@ -1,0 +1,223 @@
+Run 1:  Tue Jul 21 12:28:42 2026.  .
+        Em version 18.56 (64-bit LNX-86) on wheatley local.
+
+  Project:  /home/ignacio/projects/superconducting_diplexer/simulations/sir_v2.son.
+
+    Begin electromagnetic simulation using frequency sweep:
+      ABS Start = 1, Stop = 16 GHZ
+
+    Frequency:  1 GHZ
+      Subsectioning at 16 GHz with Eeff of 10.9.
+
+      Sonnet Warning:
+      Potential problem with box parameter.
+      Circuit does not have air layer immediately above
+      free space bottom cover.
+
+      Subsectioning time:  0 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 328 microns length, 442 subsections, 7 MB.
+        Left SOC Magnetic Wall: 656 microns length, 420 subsections, 7 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 328 microns length, 442 subsections, 7 MB.
+        Right SOC Magnetic Wall: 656 microns length, 420 subsections, 7 MB.
+      Em license feature:  emhighperformance.
+
+      Circuit requires 2132 subsections and 60 MB of memory.
+
+      Primary structure subsections by level and type:
+      Level 0:
+        Surface Staircase:  1,051
+      Level 1:
+        Surface Staircase:  1,081
+
+      Process memory by type:
+        System matrix:            35 MB
+        Elemental subsections:
+          Primary structure:      5 MB
+          Left standard:          9 MB
+          Right standard:         9 MB
+        Fourier transform:        1 MB
+        Waveguide mode:           1 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    60 MB
+
+      Amount of RAM installed on host computer:  504 GB
+      Matrix solver:  internal 64-bit SSE with loss.
+      Simulation mode:  local machine.
+      Threads:  using 64 thread(s), 128 core(s) available.
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  1 second.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 1 second.
+        SOC Magnetic Wall Std: 0 seconds.
+        Total:                 1 second.
+      Frequency completed Tue Jul 21 12:28:44 2026.
+
+      De-embedded S-Parameters. 50 Ohm Port Terminations.
+      Magnitude/Angle. Touchstone Format. (S11 S21 S12 S22).
+      1.00000000 0.157968 -131.7 0.987440 -41.73 0.987440 -41.73 0.157968 -131.7
+      ! P1 F=1.0 Eeff=(691.56 - j0.00672987) Z0=(4.96078 + j2.41659e-05)
+      ! P2 F=1.0 Eeff=(691.56 - j0.00672987) Z0=(4.96078 + j2.41659e-05)
+      Total time per frequency:  2 seconds.
+
+    Frequency:  16 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:28:46 2026.
+      16.0000000 0.999974 -127.4 0.005626 142.58 0.005626 142.58 0.999974 -127.4
+      ! P1 F=16.0 Eeff=(623.262 - j0.00538561) Z0=(4.49708 + j3.15019e-05)
+      ! P2 F=16.0 Eeff=(623.262 - j0.00538561) Z0=(4.49708 + j3.15019e-05)
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 9.4 GHz.
+      ABS: Time = 0 seconds.
+
+    Frequency:  9.4 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:28:48 2026.
+      9.40000000 0.952042 -41.11 0.305838 -131.1 0.305838 -131.1 0.952042 -41.12
+      ! P1 F=9.4 Eeff=(665.15 - j0.00617621) Z0=(4.84815 + j2.50222e-05)
+      ! P2 F=9.4 Eeff=(665.15 - j0.00617621) Z0=(4.84815 + j2.50222e-05)
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 1.05 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  1.05 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  0 seconds.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:28:50 2026.
+      1.05000000 0.163599 -133.8 0.986523 -43.78 0.986523 -43.78 0.163599 -133.8
+      ! P1 F=1.05 Eeff=(691.527 - j0.00672915) Z0=(4.96066 + j2.41668e-05)
+      ! P2 F=1.05 Eeff=(691.527 - j0.00672915) Z0=(4.96066 + j2.41668e-05)
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 1.95 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  1.95 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:28:52 2026.
+      1.95000000 0.208265 -170.3 0.978066 -80.34 0.978066 -80.34 0.208265 -170.3
+      ! P1 F=1.95 Eeff=(690.656 - j0.00671024) Z0=(4.95743 + j2.41898e-05)
+      ! P2 F=1.95 Eeff=(690.656 - j0.00671024) Z0=(4.95743 + j2.41898e-05)
+      Total time per frequency:  2 seconds.
+      ABS: Energy conservation for port 1 at 3.5 GHz.
+      ABS: Time = 2 seconds.
+
+    Frequency:  3.5 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  0 seconds.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:28:55 2026.
+      3.50000000 0.035895 124.11 0.999343 -145.9 0.999343 -145.9 0.035895 124.11
+      ! P1 F=3.5 Eeff=(687.953 - j0.00665187) Z0=(4.94725 + j2.42628e-05)
+      ! P2 F=3.5 Eeff=(687.953 - j0.00665187) Z0=(4.94725 + j2.42628e-05)
+      Total time per frequency:  3 seconds.
+      ABS: Energy conservation for port 1 at 2.8 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  2.8 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:28:58 2026.
+      2.80000000 0.146061 154.49 0.989266 -115.5 0.989266 -115.5 0.146061 154.49
+      ! P1 F=2.8 Eeff=(689.359 - j0.00668219) Z0=(4.95258 + j2.42245e-05)
+      ! P2 F=2.8 Eeff=(689.359 - j0.00668219) Z0=(4.95258 + j2.42245e-05)
+      Total time per frequency:  3 seconds.
+      ABS: Energy conservation for port 2 at 5.55 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  5.55 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:29:01 2026.
+      5.55000000 0.154233 -149.1 0.988012 120.86 0.988012 120.86 0.154233 -149.2
+      ! P1 F=5.55 Eeff=(682.142 - j0.00652783) Z0=(4.92439 + j2.44292e-05)
+      ! P2 F=5.55 Eeff=(682.142 - j0.00652783) Z0=(4.92439 + j2.44292e-05)
+      Total time per frequency:  3 seconds.
+      ABS: Energy conservation for port 1 at 8.15 GHz.
+      ABS: Time = 1 second.
+
+    Frequency:  8.15 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  1 second.
+      Coupling time:  0 seconds.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:29:04 2026.
+      8.15000000 0.345402 52.602 0.938391 -37.42 0.938391 -37.42 0.345402 52.558
+      ! P1 F=8.15 Eeff=(671.449 - j0.00630461) Z0=(4.87828 + j2.47792e-05)
+      ! P2 F=8.15 Eeff=(671.449 - j0.00630461) Z0=(4.87828 + j2.47792e-05)
+      Total time per frequency:  3 seconds.
+      ABS: Energy conservation for port 1 at 6.65 GHz.
+      ABS: Time = 2 seconds.
+
+    Frequency:  6.65 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:29:08 2026.
+      6.65000000 0.023035 154.52 0.999704 64.373 0.999704 64.373 0.023035 154.22
+      ! P1 F=6.65 Eeff=(678.044 - j0.0064415) Z0=(4.90738 + j2.45558e-05)
+      ! P2 F=6.65 Eeff=(678.044 - j0.0064415) Z0=(4.90738 + j2.45558e-05)
+      Total time per frequency:  4 seconds.
+      ABS: Energy conservation for port 1 at 14.15 GHz.
+      ABS: Time = 2 seconds.
+
+    Frequency:  14.15 GHZ
+      Waveguide mode time:  0 seconds.
+      Fourier transform time:  0 seconds.
+      Coupling time:  0 seconds.
+      Loss time:  1 second.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0 seconds.
+      Frequency completed Tue Jul 21 12:29:11 2026.
+      14.1500000 0.999930 -117.4 0.010782 152.60 0.010782 152.60 0.999930 -117.4
+      ! P1 F=14.15 Eeff=(636.059 - j0.00561409) Z0=(4.65667 + j2.72344e-05)
+      ! P2 F=14.15 Eeff=(636.059 - j0.00561409) Z0=(4.65667 + j2.72344e-05)
+      Total time per frequency:  3 seconds.
+      ABS: SNR = 61.5978 dB (40 dB Goal) for S2_2 at 7.35 GHz.
+      ABS: Time = 3 seconds.
+
+    Post-Analysis information for em run 1:
+      Total time for 11 frequencies:  32 seconds.
+      Em errors detected: 0    Em warnings detected: 1.
+
+Em simulation completed Tue Jul 21 12:29:14 2026.

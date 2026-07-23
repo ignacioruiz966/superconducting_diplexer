@@ -1,4 +1,4 @@
-from microwave.inverted_microstrip import InvertedMicrostrip
+from geometry.inverted_microstrip import InvertedMicrostrip
 import gdsfactory as gf
 
 

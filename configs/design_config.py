@@ -5,8 +5,10 @@ from functools import cached_property
 
 @dataclass(frozen=True)
 class DesignConfig:
-    """Immutable representation of a
-    parsed CAD design configuration."""
+    """
+    Immutable representation of a
+    parsed CAD design configuration.
+    """
 
     raw_config: Dict[str, Any] = field(repr=False)
 
@@ -14,7 +16,7 @@ class DesignConfig:
         if not isinstance(self.raw_config, dict):
             raise TypeError("Configuration file must be a dict")
 
-        required_sections = {'design', 'geometry', 'process', 'output'}
+        required_sections = {'design', 'geometry', 'process', 'output', 'simulation'}
         missing_sections = required_sections - self.raw_config.keys()
 
         if missing_sections:
@@ -36,3 +38,7 @@ class DesignConfig:
     @cached_property
     def output(self) -> Dict[str, Any]:
         return self.raw_config['output']
+
+    @cached_property
+    def simulation(self) -> Dict[str, Any]:
+        return self.raw_config['simulation']

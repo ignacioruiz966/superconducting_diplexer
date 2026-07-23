@@ -1,8 +1,27 @@
+from typing import Tuple, List
+
 import gdsfactory as gf
+from geometry.geometry import Geometry
+from geometry.polygon import Polygon
+from geometry.ports.ports import Port
 from technology.process import Process
 
 
-class InvertedMicrostrip:
+class InvertedMicrostrip(Geometry):
+
+    @property
+    def ports(self) -> dict[str, Port]:
+        ...
+
+    @property
+    def polygons(self) -> List[Polygon]:
+        ...
+
+    def translate(self, dx: float, dy: float) -> 'Geometry':
+        pass
+
+    def rotate(self, angle: float, origin: Tuple[float, float] = (0.0, 0.0)) -> "Geometry":
+        pass
 
     def __init__(self, name, width, length, layer, process):
         self.name = name

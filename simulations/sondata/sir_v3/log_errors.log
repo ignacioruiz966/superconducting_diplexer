@@ -1,0 +1,39 @@
+Run 1:  Tue Jul 21 13:02:36 2026.  .
+        Em version 18.56 (64-bit LNX-86) on wheatley local.
+
+  Project:  /home/ignacio/projects/superconducting_diplexer/simulations/sir_v3.son.
+
+    Begin electromagnetic simulation using frequency sweep:
+      ABS Start = 1, Stop = 16 GHZ
+
+    Frequency:  1 GHZ
+
+      Sonnet Warning:
+      Potential problem with box parameter.
+      Circuit does not have air layer immediately above
+      free space bottom cover.
+
+
+    Post-Analysis information for em run 1:
+      Em errors detected: 0    Em warnings detected: 1.
+
+Em simulation completed Tue Jul 21 13:02:59 2026.
+
+
+Run 2:  Tue Jul 21 13:42:27 2026.  .
+        Em version 18.56 (64-bit LNX-86) on wheatley local.
+
+  Project:  /home/ignacio/projects/superconducting_diplexer/simulations/sir_v3.son.
+
+    Pre-Analysis:
+
+      Sonnet Error:
+      Project file error.
+      Response data is inconsistent with project file. Project must
+      be cleaned before it can be analyzed.
+
+
+    Post-Analysis:
+      Em errors detected: 1    Em warnings detected: 0.
+
+Analysis failed due to error Tue Jul 21 13:42:27 2026.

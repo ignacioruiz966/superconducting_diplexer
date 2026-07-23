@@ -1,0 +1,80 @@
+design:
+  name: sir
+
+geometry:
+  type: stepped_impedance_resonator
+
+  layer: TiN
+
+  orientation: 0
+
+  origin: [0,0]
+
+  sections:
+    - width: 28.31
+      length: 23
+
+    - width: 1.75
+      length: 207.60
+
+    - width: 28.31
+      length: 44.58
+
+    - width: 1.75
+      length: 234.82
+
+    - width: 28.31
+      length: 44.58
+
+    - width: 1.75
+      length: 207.60
+
+    - width: 28.31
+      length: 23
+
+
+process:
+  substrate:
+    name: Sapphire
+    thickness: 500
+    er: [9.3,11.5]
+    layer: 2
+
+  conductor:
+    name: TiN
+    thickness: 0.05
+    ls: 12
+    layer: 1
+
+  dielectric:
+    name: aSi
+    thickness: 0.15
+    er: 10.3
+    layer: 1
+
+  ground:
+    name: Nb
+    thickness: 0.5
+    ls: 0.1
+    layer: 0
+
+
+output:
+  gds:
+    gds_directory: "gds"
+    gds_filename: "sir_v4.gds"
+
+
+simulation:
+  start_frequency: 1
+  stop_frequency: 16
+  frequency_points: 201
+  box_width: 785
+  box_height: 60
+  ports: 2
+
+  output_sonnet:
+    sonnet_directory: "/home/ignacio/projects/superconducting_diplexer/simulations/"
+    son_filename: "testfile.son"
+    path_to_sonnet: "/localdata/sonnet/18.56/"
+

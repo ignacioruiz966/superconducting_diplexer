@@ -1,0 +1,20 @@
+Run 1:  Wed Jul 22 17:35:23 2026.  .
+        Em version 18.56 (64-bit LNX-86) on wheatley local.
+
+  Project:  /home/ignacio/projects/superconducting_diplexer/simulations/testfile.son.
+
+    Begin electromagnetic simulation using frequency sweep:
+      ABS Start = 1, Stop = 16 GHZ
+
+    Frequency:  1 GHZ
+
+      Sonnet Warning:
+      Potential problem with box parameter.
+      Circuit does not have air layer immediately above
+      free space bottom cover.
+
+
+    Post-Analysis information for em run 1:
+      Em errors detected: 0    Em warnings detected: 1.
+
+Em simulation completed Wed Jul 22 17:35:59 2026.
