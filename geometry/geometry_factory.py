@@ -10,7 +10,7 @@ class GeometryFactory:
     without coupling the main pipeline
     """
     @staticmethod
-    def create(geometry_config: Dict[str, Any], process: Process) -> Any:
+    def create(geometry_config: Dict[str, Any]) -> Any:
 
         geometry_type = geometry_config.get("type")
         if not geometry_type:
@@ -30,4 +30,4 @@ class GeometryFactory:
 
         geometry_class = supported_types[str(geometry_type)]
 
-        return geometry_class.from_config(geometry_config, process)
+        return geometry_class.from_config(geometry_config)

@@ -20,7 +20,7 @@ class Geometry(ABC):
 
     @classmethod
     @abstractmethod
-    def from_config(cls, config: Dict[str, Any], process: Process) -> 'Geometry':
+    def from_config(cls, config: Dict[str, Any]) -> 'Geometry':
         ...
 
     @abstractmethod

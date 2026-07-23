@@ -4,7 +4,7 @@ design:
 geometry:
   type: stepped_impedance_resonator
 
-  layer: TiN
+  layer: "TiN"
 
   orientation: 0
 

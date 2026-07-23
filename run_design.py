@@ -40,7 +40,7 @@ def main() -> None:
     process = Process.from_config(config.process)
 
     print("Building Inverted SIR geometry model...")
-    sir = GeometryFactory.create(config.geometry, process)
+    sir = GeometryFactory.create(config.geometry)
     component = sir.build()
 
     gds = GdsExport(config.output, component)

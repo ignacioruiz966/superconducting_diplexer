@@ -3,8 +3,6 @@ import math
 from geometry.geometry import Geometry
 from typing import Tuple, List, Dict, Any
 import gdsfactory as gf
-from technology.process import Process
-from geometry.polygon import Polygon
 from geometry.ports.ports import Port
 from geometry.transmission_lines.stepped_impedance_section import SteppedImpedanceSection
 
@@ -45,7 +43,7 @@ class SteppedImpedanceResonator(Geometry):
         return poly
 
     @classmethod
-    def from_config(cls, config: Dict[str, Any], process: Process) -> 'SteppedImpedanceResonator':
+    def from_config(cls, config: Dict[str, Any]) -> 'SteppedImpedanceResonator':
 
         geometry_type = config.get("type")
 
@@ -74,7 +72,7 @@ class SteppedImpedanceResonator(Geometry):
             start=start,
             section_specs=specs,
             orientation=orientation,
-            layer=process.conductor,
+            layer=layer,
         )
 
     def translate(self, dx: float, dy: float) -> 'Geometry':

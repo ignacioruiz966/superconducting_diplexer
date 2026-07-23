@@ -1,5 +1,4 @@
-from distutils.command.config import config
-
+import numpy as np
 import pysonnet as ps
 from geometry.geometry import Geometry
 from simulation.simulation_config import SimulationConfig
@@ -54,9 +53,17 @@ class SonnetProject:
         project.add_frequency_sweep("abs", f1=start_frequency, f2=stop_frequency)
         project.set_analysis("frequency sweep")
 
+        ground = [np.array([
+                [0, 0],
+                [0, box_y],
+                [box_x, box_y],
+                [box_x, 0],
+        ])]
+        project.add_polygons("metal", ground, tech_layer="Nb")
+
         exporter = SonnetExporter()
         self.geometry = self.geometry.translate(0, box_y/2)
-        exporter.export_geometry(project, self.geometry.polygons, box_x, box_y)
+        exporter.export_geometry(project, self.geometry.polygons)
 
         ports = self.geometry.ports
 

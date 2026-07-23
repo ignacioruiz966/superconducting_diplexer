@@ -4,7 +4,6 @@ import math
 import numpy as np
 
 from geometry.geometry import Geometry
-from geometry.polygon import Polygon
 from geometry.ports.ports import Port
 from typing import List, Tuple, Any
 
