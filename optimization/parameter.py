@@ -24,7 +24,9 @@ class Parameter:
 
     def set_value(self, new_value: float):
         if self.is_fixed:
-            return
+            raise RuntimeError(
+                f"Parameter '{self.name}' is fixed."
+            )
 
         if self.bounds:
             lower, upper = self.bounds
@@ -54,6 +56,9 @@ class Parameter:
             raise ValueError(f"Cannot denormalize parameter '{self.name}' without bounds.")
         lower, upper = self.bounds
         return lower + (normalized_x * (upper - lower))
+
+    def set_normalized_value(self, x: float):
+        self.set_value(x)
 
     def __str__(self) -> str:
         return f"{self.name} = {self.value:.4f} {self.units}"

@@ -1,6 +1,6 @@
 from typing import Dict, Iterator, List, Union
 import numpy as np
-
+from copy import deepcopy
 from parameter import Parameter
 
 class ParameterSet:
@@ -61,16 +61,28 @@ class ParameterSet:
     def __len__(self) -> int:
         return len(self.parameters)
 
-    def __contains__(self, name: str) -> bool:
-        return name in self.parameters
-
     def copy(self) -> "ParameterSet":
-        copied_params = [
-            Parameter(name=p.name, value=p.value, bounds=p.bounds) for p in self.parameters.values()
-        ]
-        return ParameterSet(copied_params)
+        return deepcopy(self)
 
     def keys(self):
         return self.parameters.keys()
 
-    
+    def items(self):
+        return self.parameters.items()
+
+    def values(self):
+        return self.parameters.values()
+
+    def __contains__(self, key):
+        return key in self.parameters
+
+    def update(self, values: Dict[str, float]) -> None:
+        for name in values:
+            if name not in self.parameters:
+                raise KeyError(f"Parameter '{name}' is not found in ParameterSet.")
+
+        for name, value in values.items():
+            self.parameters[name].set_value(value)
+
+
+
